@@ -23,6 +23,7 @@ defusedxml==0.7.1
 entrypoints==0.4
 executing==0.9.1
 fastjsonschema==2.16.1
+flask
 future==0.18.2
 geocoder==1.38.1
 greenlet==1.1.3
