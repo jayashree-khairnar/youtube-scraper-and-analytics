@@ -2,7 +2,7 @@ arrow==1.2.2
 aws-lambda-builders==1.18.0
 aws-sam-cli==1.54.0
 aws-sam-translator==1.49.0
-backports.zoneinfo
+backports.zoneinfo==0.2.1;python_version<"3.9"
 beautifulsoup4 
 binaryornot==0.4.4
 boto3==1.24.52
