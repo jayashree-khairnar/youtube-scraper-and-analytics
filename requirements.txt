@@ -26,7 +26,7 @@ google-auth-httplib2==0.1.0
 googleapis-common-protos==1.57.0
 gunicorn
 httplib2==0.21.0
-idna==3.4
+idna
 importlib-metadata 
 itsdangerous
 Jinja2 
