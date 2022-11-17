@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+        <meta charset="UTF-8">
+        <title>Video Details</title>
+    </head>
+
+<body>
+    <div class="main">
+        <span> <a href="javascript:history.back()">Go Back</a> </span>
+        <center>
+            <input type="image" src={{profile}} alt="Avatar">
+            <h3><span class="channel-info"> {{ch_name}} || Subscribers: {{subscribers}} </span></h3>
+        </center>
+    </div>
+
+    <div class="menu">
+        <span>
+            <a href="dashboard">&nbsp;Click for DASHBOARD </a>
+        </span>
+
+        <table class="table table-striped">
+            <br/>
+                <th style="padding: 10px;">Thumbnail</th>
+                <th style="padding: 10px;">Title</th>
+                <th style="padding: 10px;">Published Date</th>
+                <th style="padding: 10px;">Views</th>
+                <th style="padding: 10px;">Likes</th>
+                <th style="padding: 10px;">Total Comments</th>
+                <th style="padding: 10px;">Comments</th>
+                <th style="padding: 10px;">Video Link</th>
+                <th style="padding: 10px">Download Video</th>
+
+            </br>
+
+            {% for vid in vid_detail %}
+            <tr>
+                <td><img src="{{vid['ThumbnailLink']}}" height=80 width=100></img></td>
+                <td style="padding: 10px;">{{vid['Title']}}</td>
+                <td style="padding: 10px;" align="center">{{vid['PublishedDate']}}</td>
+                <td style="padding: 10px;" align="center">{{vid['Views']}}</td>
+                <td style="padding: 10px;" align="center">{{vid['Likes']}}</td>
+                <td style="padding: 10px;" align="center">{{vid['CommentsCount']}}</td>
+                <td align="center">
+                    <a href="comments/{{vid['VideoId']}}">&nbsp;View Comments</a>
+                </td>
+                <td align="center"> <a href={{vid['VideoLink']}}>&nbsp;{{vid['VideoLink']}}</a> </td>
+                <td align="center">
+                    <a href="download/{{vid['VideoId']}}">&nbsp;Click to Download</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+
+</body>
+
+</html>

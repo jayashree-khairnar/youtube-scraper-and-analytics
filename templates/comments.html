@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+    <title>Comments</title>
+
+<body>
+    <div class="comment-title">
+        <span> <a href="javascript:history.back()">Go Back</a> </span>
+
+        <center>
+            {% for vid in vid_details %}
+                {% if v_id|string() == vid['VideoId'|string()] %}
+                    <input type="image" src="{{vid['ThumbnailLink']}}" height=140 width=180>
+                    <h3>{{vid['Title']}}</h3>
+                {% endif %}
+            {% endfor %}
+        </center>
+    </div>
+
+    <div class="menu">
+        <table class="table table-striped">
+            <br/>
+                <th style="padding: 10px;">Commentator</th>
+                <th style="padding: 10px;">Comment</th>
+            </br>
+
+            {% for i in comment %}
+            <tr>
+                <td style="padding: 10px;">{{i['CommentatorsName']}}</td>
+                <td style="padding: 10px;">{{i['CommentText']}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

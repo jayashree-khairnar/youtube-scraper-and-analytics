@@ -1,0 +1,103 @@
+{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.main{
+    background-color: #565251;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 175px;
+}
+
+.main span{
+    padding: 0;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+span a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: none;
+}
+
+span a:hover{
+    color: #191489;
+}
+
+.main span a{
+    text-decoration: none;
+    background: #5D6D7E;
+    color: #fff;
+    padding: 7px 13px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.4s;
+    margin-left: 1%;
+    margin-top: 0;
+}
+
+.main span a:hover{
+    background: #2E4053;
+}
+
+.comment-title{
+    background-color: #565251;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 220px;
+}
+
+.comment-title h3{
+    font-size: 23px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.comment-title span a{
+    text-decoration: none;
+    background: #5D6D7E;
+    color: #fff;
+    padding: 7px 13px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.4s;
+    margin-left: 0.5%;
+}
+
+.comment-title span a:hover{
+    background: #2E4053;
+}
+
+.menu{
+    background-color: #B0B0B4;
+}
+
+.main input{
+    border-radius: 50%;
+}
+
+th{
+    padding: 0px;
+    font-size: 18px;
+    color: #565251;
+    border-bottom: 1px solid #909497;
+}
+
+
+tr td a{
+    text-decoration: none;
+    color: white
+}
+
+tr td a:hover{
+    color: #191489;
+}

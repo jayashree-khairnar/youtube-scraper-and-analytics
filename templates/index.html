@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+
+    <body>
+        <div class="main">
+            <div class='content'>
+                <span>
+                    <center>
+                            <input type="image" src="static/youtube-logo.png" >
+                    </center>
+                </span>
+
+                <h3 style="text-align: center">Enter The Name Of YouTube Channel</h3>
+                <div class="form">
+                    <form action="/video_details" method="POST">
+                        <input type="text" placeholder="Type to text" name="channel_name" id="channel_name">
+                        <input type="submit" value="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
