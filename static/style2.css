@@ -26,10 +26,6 @@ span a{
     padding: none;
 }
 
-span a:hover{
-    color: #191489;
-}
-
 .main span a{
     text-decoration: none;
     background: #5D6D7E;
