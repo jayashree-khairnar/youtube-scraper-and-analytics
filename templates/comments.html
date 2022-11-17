@@ -6,16 +6,15 @@
 
 <body>
     <div class="comment-title">
-        <span> <a href="javascript:history.back()">Go Back</a> </span>
-
-        <center>
+        <span class="back-btn"> <a href="javascript:history.back()">Go Back</a> </span>
+        <span class="video-title">
             {% for vid in vid_details %}
                 {% if v_id|string() == vid['VideoId'|string()] %}
                     <input type="image" src="{{vid['ThumbnailLink']}}" height=140 width=180>
                     <h3>{{vid['Title']}}</h3>
                 {% endif %}
             {% endfor %}
-        </center>
+        </span>
     </div>
 
     <div class="menu">
