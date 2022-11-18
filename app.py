@@ -89,6 +89,7 @@ def download(path):
         return send_file(buffer, as_attachment=True, download_name=title+'.mp4')
     except Exception as e:
         console.error(f'Error while downloading file: {e}')
+        return render_template("server_error.html")
 
 
 @app.route('/comments/', defaults={'path':''})
