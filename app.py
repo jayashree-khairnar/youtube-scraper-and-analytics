@@ -105,6 +105,7 @@ def comments(path):
 
     except Exception as e:
         console.error(f'Error while rendering to comments page: {e}')
+        return render_template("server_error.html")
 
 
 @app.route('/dashboard')
