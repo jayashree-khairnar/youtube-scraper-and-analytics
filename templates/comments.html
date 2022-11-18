@@ -6,7 +6,7 @@
 
 <body>
     <div class="comment-title">
-        <span class="back-btn"> <a href="javascript:history.back()">Go Back</a> </span>
+        <div class="back-btn"> <a href="javascript:history.back()">Go Back</a> </div>
         <span class="video-title">
             {% for vid in vid_details %}
                 {% if v_id|string() == vid['VideoId'|string()] %}
